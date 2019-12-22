@@ -99,11 +99,6 @@ public class UI extends JPanel implements Serializable {
     // TODO
   }
 
-  /** Sets the window to be visible if it wasn't before. */
-  public void show() {
-    frame.setVisible(true);
-  }
-
   public void start() {
     timer.start();
   }

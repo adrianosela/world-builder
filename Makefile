@@ -6,3 +6,6 @@ all: preview
 
 preview:
 	mvn compile exec:java -Dexec.mainClass=com.adrianosela.worldbuilder.preview.Preview
+
+lint:
+	mvn spotless:apply
