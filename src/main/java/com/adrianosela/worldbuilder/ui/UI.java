@@ -1,10 +1,7 @@
-package com.adrianosela.worldbuilder.world;
+package com.adrianosela.worldbuilder.ui;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.Graphics;
+import com.adrianosela.worldbuilder.world.World;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.Serializable;
@@ -84,7 +81,6 @@ public class UI extends JPanel implements Serializable {
           }
         });
 
-    // Add the elements.
     frame = new JFrame(TITLE_TEXT);
     Container pane = frame.getContentPane();
     pane.add(this, BorderLayout.CENTER);
@@ -92,6 +88,7 @@ public class UI extends JPanel implements Serializable {
 
     frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     frame.pack();
+    frame.setVisible(true);
   }
 
   @Override
